@@ -1,3 +1,19 @@
+--===============================================================================
+--Silver Layer – Data Quality Checks
+--===============================================================================
+--Purpose:
+--    This script performs comprehensive quality checks on the Silver Layer to
+--    validate data consistency, accuracy, and standardization before loading the
+--   Gold Layer. The checks cover:
+--
+--    - Null or duplicate primary/business keys
+---    - Unwanted spaces, line breaks, or hidden characters in string fields
+--    - Data standardization and enforced formatting rules
+--    - Invalid, missing, or inconsistent date values
+--    - Logical inconsistencies between related fields (e.g., prices, quantities)
+--    - Referential integrity between Silver tables where applicable
+
+
 -- ====================================================================
 -- Checking 'silver.crm_cust_info'
 -- ====================================================================
