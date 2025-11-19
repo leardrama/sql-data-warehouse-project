@@ -1,4 +1,18 @@
+/*
+===============================================================================
+Quality Checks
+===============================================================================
+Purpose:
+    This script performs quality validation on the Gold Layer, ensuring that all
+    dimension and fact tables meet the required standards for analytical use.
 
+Checks include:
+    - Uniqueness of surrogate keys in dimension tables
+    - Referential integrity between fact and dimension tables
+    - Consistency of natural keys and business rules
+    - Completeness and accuracy of links between model entities
+===============================================================================
+*/
 SELECT 
     customer_key,
     COUNT(*) AS duplicate_count
